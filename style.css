@@ -16,6 +16,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+/* miama font */
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+                
 
 .section-description {
     margin-bottom: 1.5rem;
@@ -39,6 +43,10 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 15%;
+}
+.menu-bar {
+    display: none;
+    color: rgb(255, 255, 255);
 }
 .logo {
     width: auto;
@@ -94,11 +102,10 @@ body {
     color: rgb(255, 255, 255);
 }
 span {
-    font-family: Miama;
-    font-size: 6.8rem;
+    font-family: 'Miama', sans-serif;
+    font-size: 5rem;
     font-style: italic;
     font-weight: 400;
-    font-style: italic;
     color: rgb(255, 255, 255);
 }
 .description, .habit-item p {
@@ -390,6 +397,9 @@ width: 100%;
 .bmi-header {
     width: 50%;
 }
+.bmi-header>.description {
+    width: 85%;
+}
 .bmi-section-header, .bmi-header {
     text-align: left;
 }
@@ -616,14 +626,16 @@ footer>p {
     .nav-bar {
         display: none;
     }
+    .menu-bar {
+        display: block;
+        font-size: 1.5rem;
+    }
     .home-content {
         margin: 3rem 2rem;
         position: relative;
         display: block;
-        /* padding: 2rem; */
     }
     .section-header {
-        /* width: 100%; */
         text-align: center;
         font-size: 2.2rem;
         font-weight: 800;
@@ -674,7 +686,6 @@ footer>p {
         margin: 0 2rem;
         flex-direction: column;
         justify-content: center;
-        width: 90%;
     }
     .run-content-wraper {
         margin: 1rem 2rem;
@@ -717,6 +728,10 @@ footer>p {
     /* bmi responsive */
     .bmi-header {
         width: 100%;
+    }
+    .bmi-section-header {
+        margin: 0 2rem;
+        text-align: left;
     }
     .bmi-wraper {
         flex-direction: column;
@@ -770,9 +785,6 @@ footer>p {
         z-index: 50;
     }
     /* classes responsive */
-    .class>.section-header {
-        
-    }
     .class {
         margin: 2rem auto;
         width: 85%;
