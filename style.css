@@ -244,7 +244,6 @@ width: 100%;
     width: 100%;
 }
 .run-wraper {
-    /* width: 80%; */
     margin: 0 8rem;
     display: flex;
     align-items: center;
@@ -386,7 +385,6 @@ width: 100%;
 /* bmi section styles */
 .bmi {
     width: 100%;
-    /* max-width: 1440px; */
     margin: 0;
 }
 .bmi-header {
@@ -521,7 +519,7 @@ form>input {
     gap: 2%;
 }
 .class>p {
-    width: 50%;
+    width: 90%;
     text-align: center;
 }
 .class-item {
@@ -608,6 +606,220 @@ footer>p {
     text-align: center;
 }
 
+
+
+
+
+/* Reaponsive design for small device */
+@media screen and (max-width: 576px) {
+    /* home responsive */
+    .nav-bar {
+        display: none;
+    }
+    .home-content {
+        margin: 3rem 2rem;
+        position: relative;
+        display: block;
+        /* padding: 2rem; */
+    }
+    .section-header {
+        /* width: 100%; */
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 800;
+    }
+    .content-wraper {
+        width: 100%;
+    }
+    .title {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    .home-content>.image {
+        margin: 3rem auto;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .home-content>.image img {
+        margin-right: 6.5rem;
+        width: 60%;
+        position: relative;
+    }
+    .cart-1 {
+        top: 1rem;
+        right: 0;
+    }
+    .cart-2 {
+        bottom: 2rem;
+        right: 10rem;
+    }
+    /* habit responsive */
+    .habit {
+        margin: 0 auto;
+    }
+    .heading-wraper {
+        width: 90%;
+    }
+    .habit-item-wraper {
+        margin: 2rem 2rem;
+        flex-direction: column;
+    }
+    .habit-item {
+        width: 80%;
+    }
+    /* run responsive */
+    .run-wraper {
+        margin: 0 2rem;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+    .run-content-wraper {
+        margin: 1rem 2rem;
+        width: 90%;
+    }
+    .run-content-wraper>.btn {
+        width: 100%;
+    }
+    .run-img {
+        margin: 1rem auto;
+        width: 90%;
+    }
+    /* exercise responsive */
+    .exercise {
+        width: 100%;
+        margin: 4rem 0;
+        overflow: hidden;
+    }
+    .exercise-content {
+        width: 90%;
+        margin: 2rem 2rem;
+    }
+    .exercise-img-wraper {
+        margin: 0 2rem;
+    }
+    .exercise-column-1 {
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
+    .exercise-column-2 {
+        display: grid;
+        grid-template-columns: 45% auto;
+    }
+    .img-3 {
+        display: none;
+    }
+    .img-6 {
+        display: none;
+    }
+    /* bmi responsive */
+    .bmi-header {
+        width: 100%;
+    }
+    .bmi-wraper {
+        flex-direction: column;
+    }
+    .bmi-chart {
+        width: 90%;
+        margin: 2rem 2rem;
+    }
+    .bmi-calc {
+        width: 90%;
+        margin: 2rem 2rem;
+    }
+    .bmi-calc-content {
+        padding: 0;
+    
+    }
+    .bmi-calc>form {
+        float: left;
+    }
+    form>input {
+        width: 85%;
+    }
+    .last {
+        width: 85%;
+    }
+    
+    /* team responsive */
+    .team {
+        margin: 4rem auto;
+    }
+    .team-content-wraper {
+        width: 90%;
+    }
+    .team-wraper {
+        margin: 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        background-color: rgb(34, 34, 34);
+        border-radius: 1rem;
+    }
+    .trainer-img {
+        position: relative;
+    }
+    .trainer-content {
+        z-index: 100;
+    }
+    .trainer-img-4 img {
+        z-index: 50;
+    }
+    /* classes responsive */
+    .class>.section-header {
+        
+    }
+    .class {
+        margin: 2rem auto;
+        width: 85%;
+    }
+    .class-item-wraper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2%;
+    }
+    .class-content {
+        margin: 0;
+        text-align: center;
+        transition: .3s ease;
+    }
+    .btn-more {
+        margin-bottom: 3rem;
+        width: 30%;
+    }
+
+
+    /* footer responsive */
+    hr {
+        margin: 0 2rem;
+        margin-top: 2rem;
+        width: 85%;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .about-wraper {
+        margin: 0 2rem;
+        width: 80%;
+    }
+    .about-wraper>.description {
+        margin-bottom: 0;
+    }
+    footer>p {
+        margin: 0 2rem;
+        text-align: left;
+    }
+    .about {
+        margin: 0 2rem;
+    }
+    .about-title {
+        margin: 2rem 0;
+    }
+
+}
 
 
 
